@@ -32,6 +32,7 @@ function createList(obj) {
     anchor.innerHTML = keys;
     list.appendChild(anchor);
     unorderedList.appendChild(list).appendChild(anchor);
+    document.body.appendChild(unorderedList);
   }
 
   console.log(unorderedList);
