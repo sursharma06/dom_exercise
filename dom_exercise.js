@@ -25,14 +25,13 @@
 //    </ul>
 function createList(obj) {
   var unorderedList = document.createElement('ul');
-  var list = document.createElement('li');
-  var anchor = document.createElement('a');
   for (var keys in obj) {
+    var list = document.createElement('li');
+    var anchor = document.createElement('a');
     anchor.setAttribute('href', obj[keys]);
     anchor.innerHTML = keys;
     list.appendChild(anchor);
     unorderedList.appendChild(list).appendChild(anchor);
-    console.log(anchor);
   }
 
   console.log(unorderedList);
