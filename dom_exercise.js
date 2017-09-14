@@ -35,7 +35,7 @@ function createList(obj) {
     document.body.appendChild(unorderedList);
   }
 
-  console.log(unorderedList);
+  //console.log(unorderedList);
   return unorderedList;
 }
 
